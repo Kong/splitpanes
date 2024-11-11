@@ -57,6 +57,7 @@ const unbindEvents = () => {
 
 const onMouseDown = (event, splitterIndex) => {
   bindEvents()
+  touch.value.dragging = true
   touch.value.mouseDown = true
   touch.value.activeSplitter = splitterIndex
 }
