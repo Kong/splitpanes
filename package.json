@@ -1,6 +1,6 @@
 {
   "name": "@kong/splitpanes",
-  "version": "3.1.6-patch.4",
+  "version": "3.1.6-patch.5",
   "description": "A Vue.js reliable, simple and touch-ready panes splitter / resizer",
   "author": "Antoni Andre <antoniandre.web@gmail.com>",
   "contributors": [
@@ -17,6 +17,7 @@
   "module": "./dist/splitpanes.es.js",
   "files": [
     "dist",
+    "types",
     "src/components/splitpanes"
   ],
   "exports": {
