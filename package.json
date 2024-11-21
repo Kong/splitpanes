@@ -29,6 +29,7 @@
     "./dist/*": "./dist/*"
   },
   "type": "module",
+  "types": "./types/index.d.ts",
   "keywords": [
     "splitpanes",
     "split panes",
