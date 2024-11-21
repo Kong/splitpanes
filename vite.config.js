@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import Delete from 'rollup-plugin-delete'
+import dts from 'vite-plugin-dts'
 
 // eslint-disable-next-line multiline-ternary
 const build = process.env.BUNDLE ? {
@@ -38,7 +39,8 @@ export default defineConfig({
           whitespace: 'preserve'
         }
       }
-    })
+    }),
+    dts()
   ], // https://vitejs.dev/config/
   resolve: {
     alias: {
