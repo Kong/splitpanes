@@ -40,7 +40,9 @@ export default defineConfig({
         }
       }
     }),
-    dts()
+    dts({
+      outDir: 'types'
+    })
   ], // https://vitejs.dev/config/
   resolve: {
     alias: {

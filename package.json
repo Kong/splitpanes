@@ -1,6 +1,6 @@
 {
   "name": "@kong/splitpanes",
-  "version": "3.1.6-patch.3",
+  "version": "3.1.6-patch.4",
   "description": "A Vue.js reliable, simple and touch-ready panes splitter / resizer",
   "author": "Antoni Andre <antoniandre.web@gmail.com>",
   "contributors": [
@@ -41,7 +41,7 @@
     "tsc": "tsc",
     "dev": "vite",
     "build": "vite build --base /splitpanes/",
-    "build-bundle": "BUNDLE=true vite build && mv ./dist/style.css ./dist/splitpanes.css",
+    "build-bundle": "rm -rf types && BUNDLE=true vite build && mv ./dist/style.css ./dist/splitpanes.css",
     "serve": "vite preview --base /splitpanes/",
     "publish-doc": "npm run build && npm run build-bundle && git add . && git commit -m 'Publish documentation on Github.' && git push && git push --tag"
   },
